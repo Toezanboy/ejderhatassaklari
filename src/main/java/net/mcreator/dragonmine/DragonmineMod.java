@@ -25,6 +25,9 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.dragonmine.init.DragonmineModItems;
+import net.mcreator.dragonmine.init.DragonmineModBlocks;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
 import java.util.List;
@@ -42,6 +45,10 @@ public class DragonmineMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		DragonmineModBlocks.REGISTRY.register(modEventBus);
+
+		DragonmineModItems.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/blue_orchid",
+    "up": "minecraft:block/blue_orchid",
+    "north": "minecraft:block/blue_orchid",
+    "east": "minecraft:block/blue_orchid",
+    "south": "minecraft:block/blue_orchid",
+    "west": "minecraft:block/blue_orchid",
+    "particle": "minecraft:block/blue_orchid"
+  },
+  "render_type": "solid"
+}

@@ -17,6 +17,23 @@
           "src/main/java/net/mcreator/dragonmine/procedures/NProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Bebek",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bebek",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dragonmine/loot_table/blocks/bebek.json",
+          "src/main/java/net/mcreator/dragonmine/block/BebekBlock.java",
+          "src/main/resources/assets/dragonmine/items/bebek.json",
+          "src/main/resources/assets/dragonmine/models/item/bebek.json",
+          "src/main/resources/assets/dragonmine/models/block/bebek.json",
+          "src/main/resources/assets/dragonmine/blockstates/bebek.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -24,13 +41,17 @@
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.dragonmine.bebek": "Bebek"
+    }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/dragonmine/DragonmineMod.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/dragonmine/init/DragonmineModBlocks.java",
+      "src/main/java/net/mcreator/dragonmine/init/DragonmineModItems.java"
     ]
   },
   "foldersRoot": {
@@ -48,8 +69,12 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "playeranimator"
+    ],
     "currentGenerator": "neoforge-1.21.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.dragonmine"
   },
   "mcreatorVersion": 202500228610
